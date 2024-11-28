@@ -1,0 +1,151 @@
+
+.styles.css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+.about img{
+    display: flex;
+    border-radius: 50%;
+    margin-top: 20px;
+    width: 15%;
+    margin-left: 50px;
+    z-index: 3;
+    position: absolute;
+    border: 10px solid rgb(255, 255, 255);
+}
+
+header {
+    background: #f2960bfb;
+    color: #fff;
+    padding: 1.5em 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+section {
+    margin: 2em auto;
+    padding: 1.5em;
+    max-width: 800px;
+    background: #fbf8f8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(244, 164, 4, 0.915);
+}
+
+h2 {
+    color: #ed8d0f;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+#skills ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+#skills li {
+    background: #eeb140f6;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
+
+.project {
+    margin-top: 1em;
+    padding: 1em;
+    border: 1px solid #f3f34cf6;
+    border-radius: 5px;
+}
+
+a {
+    color: #080701;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Responsividade */
+
+@media screen and (max-width: 768px) {
+   
+    .about img {
+        width: 40%; 
+        margin-left: 0;
+        margin-top: 10px;
+        position: relative;
+    }
+
+    header h1 {
+        font-size: 1.5em; 
+    }
+
+    section {
+        padding: 1em; 
+        margin: 1.5em auto; 
+    }
+
+    #skills ul {
+        flex-direction: column; 
+        padding: 0;
+    }
+
+    #skills li {
+        margin-bottom: 0.5em; 
+    }
+
+    .project {
+        margin-top: 0.5em;
+        padding: 0.5em;
+    }
+
+    body {
+        padding: 0 10px; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
+    header {
+        padding: 1em 0;
+    }
+
+    header h1 {
+        font-size: 1.2em; 
+    }
+
+    .about img {
+        width: 50%; 
+    }
+
+    section {
+        padding: 0.5em; 
+    }
+
+    #skills ul {
+        flex-direction: column; 
+        padding: 0;
+    }
+
+    .project {
+        padding: 0.5em;
+    }
+
+    a {
+        font-size: 0.9em; 
+    }
+}
